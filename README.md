@@ -1,5 +1,7 @@
 # AAI-501 Final Project: Real Estate Pricing Tier Classification
 
+Daniel Shifrin, Laxmi Rapolu, and Outhai Xayavongsa
+
 Welcome to our AAI-501 Intro to Artificial Intelligence project. We're delving into the complexities of real estate pricing, aiming to make this intricate market more accessible to buyers, sellers, and enthusiasts alike. Our journey uses Python and Jupyter Notebooks to sift through a Real Estate dataset, exploring various classification algorithms to predict pricing tiers accurately.
 
 ## <span style="color:green;">**Project Overview**</span>
