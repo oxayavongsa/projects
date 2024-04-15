@@ -1,6 +1,5 @@
 # AAI-500 Probability and Statistics for Artificial Intelligence<br><br>
-Feb. 26, 2024br><br>
-
+Feb. 26, 2024<br><br>
 Outhai Xayavongsa & Aaron Ramirez
 
 ## Analyzing Heart Disease Mortality Rates Among US Adults 35yrs+:<br><br>
