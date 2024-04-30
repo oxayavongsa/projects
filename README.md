@@ -82,7 +82,7 @@ We aim to provide a reliable classification of real estate into pricing tiers us
 ## **Reference List**
 
 - Banjara, B. (2023, November 5). Guide to Build Real Estate Price Prediction Model using ML algorithms. Medium. https://medium.com/@rubiks1200/guide-to-build-real-estate-price-prediction-model-using-ml-algorithms-254b441057bb
-- Marx, S. (2024, April 2). Majority of older homeowners plan to stay in their home as they age: Redfin. HousingWire. Retrieved April 6, 2024, from https://www.housingwire.com/articles/majority-of-older-homeowners-plan-to-stay-in-their-home-as-they-age-redfin/#:~:text=Furthermore%2C%20nearly%2080%25%20of%20boomers,bought%20a%20new%20home%20today
+- Marx, S. (2024, April 2). The majority of older homeowners plan to stay in their home as they age: Redfin. HousingWire. Retrieved April 6, 2024, from https://www.housingwire.com/articles/majority-of-older-homeowners-plan-to-stay-in-their-home-as-they-age-redfin/#:~:text=Furthermore%2C%20nearly%2080%25%20of%20boomers,bought%20a%20new%20home%20today
 - Rothstein, R., Basile, C., & Jennings, C. (2024, April 2). Housing Market Predictions For 2024: When Will Home Prices Be Affordable Again? Forbes Advisor. Retrieved April 3, 24, from https://www.forbes.com/advisor/mortgages/real-estate/housing-market-predictions/
 - Shakib, A. S. (2024). USA Real Estate Dataset. Kaggle. Retrieved March 31, 2024, from https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset/data?select=realtor-data.zip.csv
 - Sweet, J. (2020, October 23). History of the housing market over the last 50 years. Stacker. Retrieved April 3, 2024, from https://stacker.com/money/history-housing-market-over-last-50-years
@@ -95,7 +95,7 @@ To provide a comprehensive overview of our research, findings, and the journey o
 
 Watch our presentation to see our project come to life, understand our process, and get insights into the real estate market through our analysis.
 
-## <a href="https://youtu.be/emlKCF9z5Bo">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a>
+## <a href="https://youtu.be/emlKCF9z5Bo">**YouTube Link Presentation**</a>
 
 ## **Acknowledgments**
 
