@@ -95,7 +95,7 @@ To provide a comprehensive overview of our research, findings, and the journey o
 
 Watch our presentation to see our project come to life, understand our process, and get insights into the real estate market through our analysis.
 
-# <a href="https://www.youtube.com/watch?v=video_id" target="_blank">**Watch the Presentation on YouTube**</a>
+## <a href="https://youtu.be/emlKCF9z5Bo">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a>
 
 ## **Acknowledgments**
 
