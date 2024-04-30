@@ -6,9 +6,9 @@ Welcome to our AAI-501 Intro to Artificial Intelligence project. We're delving i
 
 ## <span style="color:green;">**Project Overview**</span>
 
-The real estate market is a tapestry woven from various factors — location, property features, economic conditions, and more. Our mission? To unravel this complexity by creating a model that classifies properties into distinct pricing tiers. This tool is designed to empower decision-making, offering insights that pave the way for a deeper market understanding.
+The real estate market is a tapestry woven from various factors — location, property features, economic conditions, and more. Our mission? To unravel this complexity by creating a model that classifies properties into distinct pricing tiers. This tool empowers decision-making, offering insights that pave the way for a deeper market understanding.
 
-Utilizing Python and Jupyter Notebooks allows us to efficiently process and model data, exploring algorithms from Logistic Regression to Gradient Boosting. Our goal is to illuminate patterns within the real estate realm, making the market's intricacies navigable for all.
+Utilizing Python and Jupyter Notebooks allows us to process efficiently and model data, exploring algorithms from Logistic Regression to Gradient Boosting. Our goal is to illuminate patterns within the real estate realm, making the market's intricacies navigable for all.
 
 Our data is sourced from this Kaggle dataset, offering a comprehensive view of the current real estate landscape.
 ### **<a href="https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset/data?select=realtor-data.zip.csv">Dataset Website**
@@ -21,9 +21,9 @@ Our data is sourced from this Kaggle dataset, offering a comprehensive view of t
 
 * Executive Properties (Tier 3): Upscale living options priced between $500,001 and $1,000,000, featuring modern amenities and convenient access to urban facilities. Executive homes in desirable neighborhoods, upscale condos, or luxury townhouses cater to discerning buyers seeking premium features.
 
-* Luxury Estates (Tier 4): High-end properties priced above $1,000,000, offering expansive living spaces, premium finishes, and exclusive locations. Luxury estates provide affluent buyers with amenities such as swimming pools, private gyms, and meticulously landscaped grounds.
+* Luxury Estates (Tier 4): High-end properties priced above $1,000,000, offering expansive living spaces, premium finishes, and exclusive locations. Luxury estates provide affluent buyers with swimming pools, private gyms, and meticulously landscaped grounds.
 
-<i>These pricing tiers help categorize residential properties based on their price range and features, providing valuable insights for buyers and sellers in the real estate market.These tiers, shaped by market dynamics and detailed analysis, form the backbone of our model, ensuring relevance and adaptability in our market predictions.</i>
+<i>These pricing tiers help categorize residential properties based on their price range and features, providing valuable insights for buyers and sellers in the real estate market. These tiers, shaped by market dynamics and detailed analysis, form the backbone of our model, ensuring relevance and adaptability in our market predictions.</i>
 
 ## **Technologies Used**
 
@@ -95,9 +95,7 @@ To provide a comprehensive overview of our research, findings, and the journey o
 
 Watch our presentation to see our project come to life, understand our process, and get insights into the real estate market through our analysis.
 
-### <a href="https://www.youtube.com/watch?v=video_id" target="_blank">**Watch the Presentation on YouTube**</a>
-
-<I>Note: The link will be updated once our presentation is live on YouTube.</i>
+# <a href="https://www.youtube.com/watch?v=video_id" target="_blank">**Watch the Presentation on YouTube**</a>
 
 ## **Acknowledgments**
 
