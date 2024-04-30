@@ -32,6 +32,8 @@ Predictive Modeling
 Data Cleaning and Preparation
 Programming (Python)
 
+# <a href="https://www.youtube.com/watch?v=video_id" target="_blank">**Watch the Presentation on YouTube**</a>
+
 ### Contact Information
 Feel free to reach out if you have any questions or if you are interested in collaborating on future projects.
 Name: Outhai Xayavongsa (Ms. Thai)
