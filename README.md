@@ -12,7 +12,7 @@ Tools Used: Python, Jupyter, Statistical Analysis Methods
 #### Overview:
 This project involved statistical analysis and probability theory to understand the factors influencing heart disease mortality rates. Through rigorous data cleaning, exploratory data analysis, and the application of statistical tests, I developed a comprehensive understanding of the significant predictors of heart disease. This project emphasized the practical application of biostatistics in public health.
 
-### 2. <a href="https://www.youtube.com/watch?v=video_id" target="_blank">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a>
+### 2. <a href="[https://www.youtube.com/watch?v=video_id" target="_blank](https://youtu.be/emlKCF9z5Bo?t=47)">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a>
 Course: Introduction to Artificial Intelligence
 AAI-501 provides a comprehensive introduction to the field of Artificial Intelligence (AI), focusing on modern advancements in machine learning, deep learning, big data, and computational power. It covers essential AI concepts, techniques, and challenges across multiple domains such as Natural Language Processing (NLP), Computer Vision (CV), and more. Students will learn and apply a variety of AI methodologies, including heuristic search, genetic algorithms, Bayesian networks, and neural network models. Practical applications will be explored in areas like image processing, biomedical systems, and robotics, using Python. The course also emphasizes ethical considerations in AI development, such as fairness, trust, bias, and safety, aiming to foster skills in project management, teamwork, and leadership.
 
