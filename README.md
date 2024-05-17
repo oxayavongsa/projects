@@ -22,7 +22,7 @@ Tools Used: Python, Scikit-learn, Jupyter, Tensorflow, and Machine Learning Algo
 #### Overview:
 In this project, I implemented several machine learning models to classify real estate properties into different pricing tiers based on a variety of features such as location, size, and condition. The project involved data preprocessing, feature engineering, model selection, and extensive evaluation of classifiers including, Random Forests, K-Nearest Neighbors, Gradient Boosting Machines and more. The final model was deployed to provide real-time predictions that can assist investors and buyers in making informed decisions.
 
-### 3.Prediction of Life Expectancy Based on Gender
+### 3. Prediction of Life Expectancy Based on Gender
 
 This project aimed to predict life expectancy across different US states for males and females using advanced machine learning techniques. It involved an in-depth analysis of life expectancy data from 2010-2015 and 2020, examining the impact of gender and geographic location on life expectancy rates.
 
