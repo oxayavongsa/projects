@@ -50,6 +50,6 @@ The following list will be updated with more projects as they are completed in t
 - Model Deployment
 
 ### Contact Information
-Feel free to reach out if you have any questions or if you are interested in collaborating on future projects.
-Name: Outhai Xayavongsa (Ms. Thai)
+Feel free to reach out if you have any questions or if you are interested in collaborating on future projects.<br>
+Outhai Xayavongsa (Ms. Thai)
 ### [LinkedIn](https://www.linkedin.com/in/oxayavongsa/)
