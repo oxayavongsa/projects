@@ -1,4 +1,4 @@
-<h1>Life Expectancy Prediction by US State and Gender</h1>
+<h1>Prediction of Life Expectancy based on Gender</h1>
 
 <p>This project aims to predict life expectancy based on the US state and gender using machine learning models. The project involves data cleaning, exploratory data analysis, feature engineering, model training, and evaluation.</p>
 
