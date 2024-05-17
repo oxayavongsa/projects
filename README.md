@@ -11,7 +11,6 @@
     <li><a href="#model-training-and-evaluation">Model Training and Evaluation</a></li>
     <li><a href="#prediction">Prediction</a></li>
     <li><a href="#results">Results</a></li>
-    <li><a href="#license">License</a></li>
 </ul>
 
 <h2 id="introduction">Introduction</h2>
