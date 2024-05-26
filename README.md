@@ -1,55 +1,72 @@
-# Project Portfolio
-### Overview
-This repository contains a curated selection of projects that I have completed during my graduate studies. Each project listed below showcases specific skills and theoretical applications in various domains of data science and artificial intelligence. These projects demonstrate my ability to apply complex concepts to solve real-world problems and to develop predictive models that are both robust and scalable.
+# Predicting Stroke Risk: A Machine Learning Approach to Early Detection and Prevention
+### Author: Outhai Xayavongsa
 
-## Projects
-### 1. <a href="https://youtu.be/60hwrqdN15Y">**Heart Disease Mortality Rate Analysis**</a>
-Course: Probability and Statistics
-AAI-500 is an introductory course focused on probability, statistics, and Python programming, aimed at providing students with the foundational skills necessary for advanced AI studies. It covers a range of topics including random variables, probability distributions, hypothesis testing, and logistic regression, alongside practical Python applications. The course integrates case studies and real-world problem-solving, culminating in a team project that enhances students' skills in collaboration, presentation, and academic writing.
+### Dataset
+The Stroke Prediction Dataset, authored by FEDESORIANO, comprises 11 clinical features aimed at predicting stroke events. 
 
-Tools Used: Python, Jupyter, Statistical Analysis Methods
+#### This dataset includes attributes such as:
+Gender
+Age
+Hypertension status
+Heart disease status
+Marital status
+Type of work
+Residence type
+Average glucose level
+Body mass index (BMI)
+Smoking status
+Whether the patient has had a stroke
+The data is used to analyze and predict the likelihood of a stroke based on these factors, providing valuable insights for healthcare professionals.
 
-#### Overview:
-This project involved statistical analysis and probability theory to understand the factors influencing heart disease mortality rates. Through rigorous data cleaning, exploratory data analysis, and the application of statistical tests, I developed a comprehensive understanding of the significant predictors of heart disease. This project emphasized the practical application of biostatistics in public health.
+## Problem Statement
+The objective of this project is to predict stroke occurrences using the "healthcare-dataset-stroke-data.csv" dataset. Stroke is a leading cause of death and disability worldwide, and early prediction can significantly improve patient outcomes. We aim to develop predictive models using Decision Tree and Random Forest classifiers to identify individuals at high risk of stroke based on various health and demographic features. The project involves handling data imbalance using SMOTE (Synthetic Minority Over-sampling Technique) and evaluating the models' performance using metrics such as accuracy, precision, recall, F1-score, and ROC AUC.
 
-### 2. <a href="https://youtu.be/emlKCF9z5Bo">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a>
+### Requirements
+Python 3.8+
+Pandas
+NumPy
+Seaborn
+Matplotlib
+Scikit-learn
+Imbalanced-learn
+Joblib
 
-Course: Introduction to Artificial Intelligence
-AAI-501 provides a comprehensive introduction to the field of Artificial Intelligence (AI), focusing on modern advancements in machine learning, deep learning, big data, and computational power. It covers essential AI concepts, techniques, and challenges across multiple domains such as Natural Language Processing (NLP), Computer Vision (CV), and more. Students will learn and apply a variety of AI methodologies, including heuristic search, genetic algorithms, Bayesian networks, and neural network models. Practical applications will be explored in areas like image processing, biomedical systems, and robotics, using Python. The course also emphasizes ethical considerations in AI development, such as fairness, trust, bias, and safety, aiming to foster skills in project management, teamwork, and leadership.
+### Usage
+Load and preprocess the data
+Perform exploratory data analysis (EDA)
+Handle data imbalance with SMOTE
+Train and evaluate Decision Tree and Random Forest classifiers
+Visualize model performance and feature importance
 
-Tools Used: Python, Scikit-learn, Jupyter, Tensorflow, and Machine Learning Algorithms
+### Preprocessing
+The preprocessing steps include:
+Imputing missing values
+Encoding categorical variables
+Scaling numerical features
+Handling class imbalance using SMOTE
+Models
+We use Decision Tree and Random Forest classifiers to predict stroke occurrences.
 
-#### Overview:
-In this project, I implemented several machine learning models to classify real estate properties into different pricing tiers based on a variety of features such as location, size, and condition. The project involved data preprocessing, feature engineering, model selection, and extensive evaluation of classifiers including, Random Forests, K-Nearest Neighbors, Gradient Boosting Machines and more. The final model was deployed to provide real-time predictions that can assist investors and buyers in making informed decisions.
+### Evaluation Metrics
+Accuracy
+Precision
+Recall
+F1-score
+ROC AUC
+Results
+Random Forest Classifier: Higher accuracy (92%) and reasonable ROC AUC score (0.77)
+Decision Tree Classifier: Lower accuracy (71%) and ROC AUC score (0.77)
+Feature Importance: Age, BMI, and average glucose level are the top three significant features.
 
-### 3. Prediction of Life Expectancy Based on Gender
+### Conclusion
+Early prediction of stroke can significantly improve patient outcomes by enabling timely interventions and personalized healthcare strategies. This project underscores the importance of comprehensive feature analysis and the application of robust machine learning models in predicting health outcomes. The insights gained can inform healthcare professionals and policymakers in designing targeted preventive measures and improving patient care.
 
-This project aimed to predict life expectancy across different US states for males and females using advanced machine learning techniques. It involved an in-depth analysis of life expectancy data from 2010-2015 and 2020, examining the impact of gender and geographic location on life expectancy rates.
+### Future Work
+Incorporate additional health metrics and longitudinal data
+Explore more sophisticated models to enhance prediction accuracy
 
-Tools Used: Python, Jupyter, Scikit-learn, Random Forest, GridSearchCV
+### License
+This project is licensed under the MIT License.
 
-#### Overview:
-In this project, I loaded and inspected datasets containing life expectancy data by state and census tract for the years 2010-2015 and state-level data by sex for the year 2020. The data was thoroughly cleaned and preprocessed, including handling missing values and encoding categorical variables. I performed exploratory data analysis to identify patterns and distributions within the data. For the predictive modeling, I used Linear Regression and Random Forest Regressor, with hyperparameter tuning using GridSearchCV to optimize the Random Forest model's performance. The project included functions to predict life expectancy for different genders across states, identifying the states with the highest life expectancy for males and females. This project demonstrated my proficiency in data preprocessing, statistical analysis, and the application of machine learning models to derive meaningful insights from complex datasets.
-
-## Additional Projects
-The following list will be updated with more projects as they are completed in the upcoming courses:
-
-## Skills Demonstrated
-- Statistical Analysis
-- Machine Learning
-- Data Visualization
-- Predictive Modeling
-- Data Cleaning and Preparation
-- Programming (Python)
-- Feature Engineering
-- Hyperparameter Tuning
-- Model Evaluation
-- Exploratory Data Analysis (EDA)
-- Handling Missing Data
-- Data Encoding
-- Model Deployment
-
-### Contact Information
-Feel free to reach out if you have any questions or if you are interested in collaborating on future projects.<br>
-Outhai Xayavongsa (Ms. Thai)
-### [LinkedIn](https://www.linkedin.com/in/oxayavongsa/)
+### Acknowledgments
+Thanks to FEDESORIANO for the Stroke Prediction Dataset.
