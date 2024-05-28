@@ -4,6 +4,7 @@ This repository contains a curated selection of projects that I have completed d
 
 ## Projects
 ### 1. <a href="https://youtu.be/60hwrqdN15Y">**Heart Disease Mortality Rate Analysis**</a>
+<a href="https://github.com/oxayavongsa/projects/tree/Heart-Disease-Mortality-Rate---Probability-%26-Statistics"**GitHub project**</a>
 Course: Probability and Statistics
 AAI-500 is an introductory course focused on probability, statistics, and Python programming, aimed at providing students with the foundational skills necessary for advanced AI studies. It covers a range of topics including random variables, probability distributions, hypothesis testing, and logistic regression, alongside practical Python applications. The course integrates case studies and real-world problem-solving, culminating in a team project that enhances students' skills in collaboration, presentation, and academic writing.
 
