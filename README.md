@@ -1,6 +1,6 @@
 # Project Portfolio
 ### Overview
-This repository contains a curated selection of projects that I have completed during my graduate studies. Each project listed below showcases specific skills and theoretical applications in various domains of data science and artificial intelligence. These projects demonstrate my ability to apply complex concepts to solve real-world problems and to develop predictive models that are both robust and scalable.
+This repository contains a curated selection of projects that I have completed during my graduate studies. I will continue on-going work for the next couple of years to expand my portfolio. Each project listed below showcases specific skills and theoretical applications in various domains of data science and artificial intelligence. These projects demonstrate my ability to apply complex concepts to solve real-world problems and to develop predictive models that are both robust and scalable.
 
 ## Projects
 ### 1. <a href="https://youtu.be/60hwrqdN15Y">**Heart Disease Mortality Rate Analysis**</a><br>
