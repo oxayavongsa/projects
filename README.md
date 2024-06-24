@@ -4,10 +4,12 @@ This repository contains a curated selection of projects that I have completed d
 
 ## Projects
 ### 1. <a href="https://youtu.be/60hwrqdN15Y">**Heart Disease Mortality Rate Analysis**</a><br>
-<a href="https://github.com/oxayavongsa/projects/tree/Heart-Disease-Mortality-Rate---Probability-%26-Statistics">**GitHub project**</a><br>
+<a href="https://github.com/oxayavongsa/projects/tree/Heart-Disease-Mortality-Rate---Probability-%26-Statistics">**GitHub project**</a><be>
+
 Course: Probability and Statistics
 AAI-500 is an introductory course focused on probability, statistics, and Python programming, aimed at providing students with the foundational skills necessary for advanced AI studies. It covers a range of topics including random variables, probability distributions, hypothesis testing, and logistic regression, alongside practical Python applications. The course integrates case studies and real-world problem-solving, culminating in a team project that enhances students' skills in collaboration, presentation, and academic writing.
 
+Course: Probability and Statistics
 Tools Used: Python, Jupyter, Statistical Analysis Methods
 
 #### Overview:
@@ -25,28 +27,26 @@ In this project, I implemented several machine learning models to classify real 
 
 ### 3. <a href="https://github.com/oxayavongsa/projects/tree/U.S-Life-Expectancy-Prediction---Male-vs-Female">Prediction of Life Expectancy Based on Gender</a>
 
-This project aimed to predict life expectancy across different US states for males and females using advanced machine learning techniques. It involved an in-depth analysis of life expectancy data from 2010-2015 and 2020, examining the impact of gender and geographic location on life expectancy rates.
-
 Tools Used: Python, Jupyter, Scikit-learn, Random Forest, GridSearchCV
 
 #### Overview:
-In this project, I loaded and inspected datasets containing life expectancy data by state and census tract for the years 2010-2015 and state-level data by sex for the year 2020. The data was thoroughly cleaned and preprocessed, including handling missing values and encoding categorical variables. I performed exploratory data analysis to identify patterns and distributions within the data. For the predictive modeling, I used Linear Regression and Random Forest Regressor, with hyperparameter tuning using GridSearchCV to optimize the Random Forest model's performance. The project included functions to predict life expectancy for different genders across states, identifying the states with the highest life expectancy for males and females. This project demonstrated my proficiency in data preprocessing, statistical analysis, and the application of machine learning models to derive meaningful insights from complex datasets.
+This project aimed to predict life expectancy across different US states for males and females using advanced machine learning techniques. It involved an in-depth analysis of life expectancy data from 2010-2015 and 2020, examining the impact of gender and geographic location on life expectancy rates. I performed exploratory data analysis, data preprocessing, and predictive modeling using Linear Regression and Random Forest Regressor, with hyperparameter tuning using GridSearchCV.
 
 ### 4. <a href="https://github.com/oxayavongsa/projects/tree/Predicting-Stroke-Risk-for-Early-Detection">Predicting Stroke Risk: A Machine Learning Approach to Early Detection and Prevention</a>
-Course: Machine Learning for Health
 
 Tools Used: Python, Jupyter, Scikit-learn, Imbalanced-learn, Decision Tree, Random Forest
 
 #### Overview:
-The objective of this project was to predict stroke occurrences using the "healthcare-dataset-stroke-data.csv" dataset. Stroke is a leading cause of death and disability worldwide, and early prediction can significantly improve patient outcomes. We developed predictive models using Decision Tree and Random Forest classifiers to identify individuals at high risk of stroke based on various health and demographic features. The project involved handling data imbalance using SMOTE and evaluating the models' performance using metrics such as accuracy, precision, recall, F1-score, and ROC AUC.
+The objective of this project was to predict stroke occurrences using the "healthcare-dataset-stroke-data.csv" dataset. We developed predictive models using Decision Tree and Random Forest classifiers to identify individuals at high risk of stroke based on various health and demographic features. The project involved handling data imbalance using SMOTE and evaluating the models' performance using metrics such as accuracy, precision, recall, F1-score, and ROC AUC.
 
-#### Results:
-Random Forest Classifier: Higher accuracy (92%) and reasonable ROC AUC score (0.77)
-Decision Tree Classifier: Lower accuracy (71%) and ROC AUC score (0.77)
-Feature Importance: Age, BMI, and average glucose level are the top three significant features.
+### 5. <a href="https://www.youtube.com/watch?v=TztlKFz5VXU">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a><br>
+<a href="https://github.com/oxayavongsa/projects/tree/Vehicle-Insurance-Fraud-Detection---Machine-Learning">**GitHub Project**</a><br>
 
-## Additional Projects
-The following list will be updated with more projects as they are completed in the upcoming courses:
+Course: Machine Learning (AAI-510)
+Tools Used: Python, Jupyter, Scikit-learn, XGBoost, CatBoost
+
+#### Overview:
+This project aimed to tackle the issue of vehicle insurance fraud, which causes significant financial losses for insurance companies and erodes consumer trust. By leveraging historical vehicle and policy data, our objective was to develop a robust predictive model to accurately detect and prevent fraudulent claims. The implementation of this model helps insurance companies minimize financial losses, enhance the efficiency of claims processing, and maintain fair premium pricing for customers.
 
 ## Skills Demonstrated
 * Statistical Analysis
@@ -62,6 +62,14 @@ The following list will be updated with more projects as they are completed in t
 * Handling Missing Data
 * Data Encoding
 * Model Deployment
+* Fraud Detection
+* Handling Class Imbalance
+* Model Comparison
+* Bayesian Optimization
+* Data Balancing (SMOTE)
+* Anomaly Detection (Isolation Forest)
+* Ensemble Learning (Gradient Boosting, Random Forest)
+* Hyperparameter Tuning (GridSearchCV, RandomizedSearchCV, Bayesian Optimization)
 
 ### Contact Information
 Feel free to reach out if you have any questions or if you are interested in collaborating on future projects.<br>
