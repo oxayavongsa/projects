@@ -12,6 +12,7 @@ Course: Probability and Statistics
 AAI-500 is an introductory course focused on probability, statistics, and Python programming, aimed at providing students with the foundational skills necessary for advanced AI studies. It covers a range of topics including random variables, probability distributions, hypothesis testing, and logistic regression, alongside practical Python applications. The course integrates case studies and real-world problem-solving, culminating in a team project that enhances students' skills in collaboration, presentation, and academic writing.
 
 Course: Probability and Statistics
+
 Tools Used: Python, Jupyter, Statistical Analysis Methods
 
 #### Overview:
@@ -44,7 +45,7 @@ The objective of this project was to predict stroke occurrences using the "healt
 ### 5. <a href="https://www.youtube.com/watch?v=TztlKFz5VXU">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a><br>
 <a href="https://github.com/oxayavongsa/projects/tree/Vehicle-Insurance-Fraud-Detection---Machine-Learning">**GitHub Project**</a><br>
 
-Course: Machine Learning (AAI-510)
+Course: Machine Learning
 Tools Used: Python, Jupyter, Scikit-learn, XGBoost, CatBoost
 
 #### Overview:
