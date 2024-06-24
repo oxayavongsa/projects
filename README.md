@@ -23,6 +23,8 @@ This project involved statistical analysis and probability theory to understand 
 Course: Introduction to Artificial Intelligence
 AAI-501 provides a comprehensive introduction to the field of Artificial Intelligence (AI), focusing on modern advancements in machine learning, deep learning, big data, and computational power. It covers essential AI concepts, techniques, and challenges across multiple domains such as Natural Language Processing (NLP), Computer Vision (CV), and more. Students will learn and apply a variety of AI methodologies, including heuristic search, genetic algorithms, Bayesian networks, and neural network models. Practical applications will be explored in areas like image processing, biomedical systems, and robotics, using Python. The course also emphasizes ethical considerations in AI development, such as fairness, trust, bias, and safety, aiming to foster skills in project management, teamwork, and leadership.
 
+Course: Intro to AI
+
 Tools Used: Python, Scikit-learn, Jupyter, Tensorflow, and Machine Learning Algorithms
 
 #### Overview:
@@ -46,6 +48,7 @@ The objective of this project was to predict stroke occurrences using the "healt
 <a href="https://github.com/oxayavongsa/projects/tree/Vehicle-Insurance-Fraud-Detection---Machine-Learning">**GitHub Project**</a><br>
 
 Course: Machine Learning
+
 Tools Used: Python, Jupyter, Scikit-learn, XGBoost, CatBoost
 
 #### Overview:
