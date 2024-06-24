@@ -79,4 +79,4 @@ The dataset offers a robust sample size for training and evaluating the predicti
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Orginal Link: https://github.com/oxayavongsa/aai-510-ml-group-1
+### Original Link: https://github.com/oxayavongsa/aai-510-ml-group-1
