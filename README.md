@@ -44,7 +44,7 @@ Tools Used: Python, Jupyter, Scikit-learn, Imbalanced-learn, Decision Tree, Rand
 #### Overview:
 The objective of this project was to predict stroke occurrences using the "healthcare-dataset-stroke-data.csv" dataset. We developed predictive models using Decision Tree and Random Forest classifiers to identify individuals at high risk of stroke based on various health and demographic features. The project involved handling data imbalance using SMOTE and evaluating the models' performance using metrics such as accuracy, precision, recall, F1-score, and ROC AUC.
 
-### 5. <a href="https://www.youtube.com/watch?v=TztlKFz5VXU">**Vehicle Insurance Fraud Detection**</a><br>
+### 5. <a href="https://www.youtube.com/watch?v=TztlKFz5VXU">**Detection and Prevention of Vehicle Insurance Fraud Claim**</a><br>
 <a href="https://github.com/oxayavongsa/projects/tree/Vehicle-Insurance-Fraud-Detection---Machine-Learning">**GitHub Project**</a><br>
 
 Course: Machine Learning
