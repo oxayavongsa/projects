@@ -1,83 +1,129 @@
-# Project Portfolio
-### Overview
-This repository contains a curated selection of projects that I have completed during my graduate studies. I will continue on-going work for the next couple of years to expand my portfolio. Each project listed below showcases specific skills and theoretical applications in various domains of data science and artificial intelligence. These projects demonstrate my ability to apply complex concepts to solve real-world problems and to develop predictive models that are both robust and scalable.
+# Music Genre and Composer Classification Using Deep Learning
 
-**Please click on the Links to view the YouTube Video and/or Project.**
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg) 
 
-## Projects
-### 1. <a href="https://youtu.be/60hwrqdN15Y">**Heart Disease Mortality Rate Analysis**</a><br>
-<a href="https://github.com/oxayavongsa/projects/tree/Heart-Disease-Mortality-Rate---Probability-%26-Statistics">**GitHub project**</a><be>
+` Authors: Zain Ali, Angel Benitez, and Outhai Xayavongsa`
 
-Course: Probability and Statistics
-AAI-500 is an introductory course focused on probability, statistics, and Python programming, aimed at providing students with the foundational skills necessary for advanced AI studies. It covers a range of topics including random variables, probability distributions, hypothesis testing, and logistic regression, alongside practical Python applications. The course integrates case studies and real-world problem-solving, culminating in a team project that enhances students' skills in collaboration, presentation, and academic writing.
+## Project Overview
 
-Course: Probability and Statistics
+This project focuses on classifying music by genre and composer using deep learning techniques. The primary goal is to accurately identify the composer of a given musical piece by leveraging two deep learning models: Long Short-Term Memory (LSTM) and Convolutional Neural Network (CNN). 
 
-Tools Used: Python, Jupyter, Statistical Analysis Methods
+Classifying composers based on musical scores is a challenging task due to the nuanced differences in styles and compositions. However, by applying state-of-the-art deep learning models, this project aims to achieve high accuracy in composer classification, contributing to the fields of musicology and artificial intelligence.
 
-#### Overview:
-This project involved statistical analysis and probability theory to understand the factors influencing heart disease mortality rates. Through rigorous data cleaning, exploratory data analysis, and the application of statistical tests, I developed a comprehensive understanding of the significant predictors of heart disease. This project emphasized the practical application of biostatistics in public health.
+## Repository Structure
 
-### 2. <a href="https://youtu.be/emlKCF9z5Bo">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a><br>
-<a href="https://github.com/oxayavongsa/projects/tree/Real-Estate-Pricing-Tier---Intro-to-AI">**GitHub project**</a><br>
-Course: Introduction to Artificial Intelligence
-AAI-501 provides a comprehensive introduction to the field of Artificial Intelligence (AI), focusing on modern advancements in machine learning, deep learning, big data, and computational power. It covers essential AI concepts, techniques, and challenges across multiple domains such as Natural Language Processing (NLP), Computer Vision (CV), and more. Students will learn and apply a variety of AI methodologies, including heuristic search, genetic algorithms, Bayesian networks, and neural network models. Practical applications will be explored in areas like image processing, biomedical systems, and robotics, using Python. The course also emphasizes ethical considerations in AI development, such as fairness, trust, bias, and safety, aiming to foster skills in project management, teamwork, and leadership.
+| File/Folder Name                                        | Description                                                                                           |
+|---------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| `Music Genre and Composer Classification Using Deep Learning.ipynb` | The Jupyter Notebook containing the entire codebase for the project.                        |
+| `Music Genre and Composer Classification Using Deep Learning.pdf`  | A PDF version of the Jupyter Notebook for easy sharing and reviewing.                         |
+| `Music Genre and Composer Classification Using Deep Learning.py`   | A Python script version of the Jupyter Notebook for running the code outside of a notebook environment.|
+| `raw_data/`                                             | Contains the raw dataset used in the project, including the `midi_classic_music_data.zip` file.        |
+| `README.md`                                             | This document.                                                                                         |
+| `requirements.txt`                                      | Lists all the dependencies and libraries required to run the project.                                  |
+| `LICENSE`                                               | The licensing information for the project.                                                            |
+| `.gitignore`                                            | Specifies files and directories that should be ignored by Git.                                         |
 
-Course: Intro to AI
+## Dataset
 
-Tools Used: Python, Scikit-learn, Jupyter, Tensorflow, and Machine Learning Algorithms
+The dataset used for this project consists of 3,929 MIDI files of classical works by 175 composers, including Bach, Beethoven, Chopin, and Mozart. The dataset is sourced from Kaggle and can be found [here](https://www.kaggle.com/datasets/blanderbuss/midi-classic-music).
 
-#### Overview:
-In this project, I implemented several machine learning models to classify real estate properties into different pricing tiers based on a variety of features such as location, size, and condition. The project involved data preprocessing, feature engineering, model selection, and extensive evaluation of classifiers including, Random Forests, K-Nearest Neighbors, Gradient Boosting Machines and more. The final model was deployed to provide real-time predictions that can assist investors and buyers in making informed decisions.
+For the purpose of this project, the focus is narrowed down to the following four composers:
 
-### 3. <a href="https://github.com/oxayavongsa/projects/tree/U.S-Life-Expectancy-Prediction---Male-vs-Female">Prediction of Life Expectancy Based on Gender</a>
+1. Johann Sebastian Bach
+2. Ludwig van Beethoven
+3. Frédéric Chopin
+4. Wolfgang Amadeus Mozart
 
-Tools Used: Python, Jupyter, Scikit-learn, Random Forest, GridSearchCV
+These composers were chosen due to their distinct styles and significant contributions to classical music.
 
-#### Overview:
-This project aimed to predict life expectancy across different US states for males and females using advanced machine learning techniques. It involved an in-depth analysis of life expectancy data from 2010-2015 and 2020, examining the impact of gender and geographic location on life expectancy rates. I performed exploratory data analysis, data preprocessing, and predictive modeling using Linear Regression and Random Forest Regressor, with hyperparameter tuning using GridSearchCV.
+**Note:** The `raw_data/` directory already contains the necessary data for the project, so there's no need to download or prepare the dataset unless there are specific changes or updates required.
 
-### 4. <a href="https://github.com/oxayavongsa/projects/tree/Predicting-Stroke-Risk-for-Early-Detection">Predicting Stroke Risk: A Machine Learning Approach to Early Detection and Prevention</a>
+### All Artists Inclusive Analysis
 
-Tools Used: Python, Jupyter, Scikit-learn, Imbalanced-learn, Decision Tree, Random Forest
+In addition to the primary analysis focusing on the four composers mentioned above, the project also includes a comprehensive model that analyzes compositions from a broader set of 147 classical composers. This model expands the classification task to cover a wider range of styles and compositional techniques, offering insights into the ability of deep learning models to generalize across a diverse set of musical works.
 
-#### Overview:
-The objective of this project was to predict stroke occurrences using the "healthcare-dataset-stroke-data.csv" dataset. We developed predictive models using Decision Tree and Random Forest classifiers to identify individuals at high risk of stroke based on various health and demographic features. The project involved handling data imbalance using SMOTE and evaluating the models' performance using metrics such as accuracy, precision, recall, F1-score, and ROC AUC.
+This inclusive analysis is crucial for understanding the limitations and strengths of the models when applied to a larger and more varied dataset. The findings from this analysis provide a deeper understanding of how well the models can differentiate between composers with varying levels of similarity in their musical styles.
 
-### 5. <a href="https://www.youtube.com/watch?v=TztlKFz5VXU">**Detection and Prevention of Vehicle Insurance Fraud Claim**</a><br>
-<a href="https://github.com/oxayavongsa/projects/tree/Vehicle-Insurance-Fraud-Detection---Machine-Learning">**GitHub Project**</a><br>
+## Methodology
 
-Course: Machine Learning
+### 1. Data Collection
+The MIDI files are downloaded from Kaggle and stored in the `raw_data/` directory. 
 
-Tools Used: Python, Jupyter, Scikit-learn, XGBoost, CatBoost
+### 2. Data Pre-processing
+The MIDI files are pre-processed to convert the musical scores into a format suitable for deep learning models. This involves:
+- Parsing the MIDI files to extract relevant musical features.
+- Applying data augmentation techniques to create a more diverse training set.
 
-#### Overview:
-This project aimed to tackle the issue of vehicle insurance fraud, which causes significant financial losses for insurance companies and erodes consumer trust. By leveraging historical vehicle and policy data, our objective was to develop a robust predictive model to accurately detect and prevent fraudulent claims. The implementation of this model helps insurance companies minimize financial losses, enhance the efficiency of claims processing, and maintain fair premium pricing for customers.
+### 3. Feature Extraction
+Features such as notes, chords, and tempo are extracted using specialized music analysis tools. These features are essential for distinguishing between different composers and genres.
 
-## Skills Demonstrated
-* Statistical Analysis
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* Data Cleaning and Preparation
-* Programming (Python)
-* Feature Engineering
-* Hyperparameter Tuning
-* Model Evaluation
-* Exploratory Data Analysis (EDA)
-* Handling Missing Data
-* Data Encoding
-* Model Deployment
-* Fraud Detection
-* Handling Class Imbalance
-* Model Comparison
-* Bayesian Optimization
-* Data Balancing (SMOTE)
-* Anomaly Detection (Isolation Forest)
-* Ensemble Learning (Gradient Boosting, Random Forest)
-* Hyperparameter Tuning (GridSearchCV, RandomizedSearchCV, Bayesian Optimization)
+### 4. Model Building
+Two deep learning models are developed:
+- **LSTM (Long Short-Term Memory):** LSTM networks are used due to their effectiveness in handling sequential data, such as musical scores.
+- **CNN (Convolutional Neural Network):** CNNs are applied to capture the spatial relationships within the musical features.
 
-### Contact Information
-Feel free to reach out if you have any questions or if you are interested in collaborating on future projects.<br>
-Outhai Xayavongsa (Ms. Thai)
-### [LinkedIn](https://www.linkedin.com/in/oxayavongsa/)
+### 5. Model Training
+The models are trained using the pre-processed and feature-extracted data. Various hyperparameters are tuned to optimize model performance.
+
+### 6. Model Evaluation
+The models are evaluated based on:
+- **Accuracy:** The percentage of correctly classified composers.
+- **Validation Loss:** The loss function value calculated on the validation dataset during training.
+
+### 7. Model Optimization
+Further optimization is performed by fine-tuning the hyperparameters, adjusting the learning rate, batch size, and model architecture.
+
+## Results
+
+### Four Composer Analysis
+The results of the model training and evaluation for the four composers (Bach, Beethoven, Chopin, and Mozart) will be included in the project report. This section highlights the accuracy, validation loss, and any insights gained during the project.
+
+### All Artists Inclusive Analysis
+The broader model that includes 147 composers provides a more extensive evaluation, revealing how the models perform across a larger and more diverse dataset. The results from this analysis are crucial for understanding the generalization capabilities of the models.
+
+## Usage
+
+### Running the Code
+To run the project on your local machine:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/zainnobody/AAI-511-Final-Project
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd AAI-511-Final-Project
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook "Music Genre and Composer Classification Using Deep Learning.ipynb"
+   ```
+5. Alternatively, run the Python script:
+   ```bash
+   python "Music Genre and Composer Classification Using Deep Learning.py"
+   ```
+
+### Dataset Preparation
+The dataset is already prepared and included in the `raw_data/` directory. If new data is introduced or updates are required, follow these steps:
+- Download the dataset from the [Kaggle link](https://www.kaggle.com/datasets/blanderbuss/midi-classic-music).
+- Unzip the files and place them in the `raw_data/` directory.
+
+### Model Training
+Ensure that your environment is set up with the necessary libraries (as specified in the `requirements.txt`). Train the model using the provided data and code.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Acknowledgements
+
+- The dataset is sourced from Kaggle.
+- Special thanks to the course instructor and teammates for their contributions and support throughout the project.
+
+## Contact
+
+For any inquiries or contributions, please contact us within Slack.
