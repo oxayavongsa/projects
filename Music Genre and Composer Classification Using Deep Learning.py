@@ -1,3 +1,4 @@
+
 # %% [markdown]
 # # Music Genre and Composer Classification Using Deep Learning 
 # 
@@ -8,10 +9,12 @@
 # %% [markdown]
 # ## Introduction
 # 
-# In this project, we employ deep learning to classify classical music compositions by their composers. Leveraging a dataset of 3,929 MIDI files from 175 composers—including Bach, Beethoven, Chopin, and Mozart—we develop Long Short-Term Memory (LSTM)  and Convolutional Neural Network (CNN) models to identify the composer of a given piece. Initially, we concentrate on the four mentioned composers to fine-tune our approach. In the end, we created a model encompassing all 147 composers in the dataset, assessing its generalization capabilities across diverse musical styles. We also performed optimizations and many other techniques to get the best models within the last few weeks. 
+# In this project, we employ deep learning to classify classical music compositions by their composers. Leveraging a dataset of 3,929 MIDI files from 175 composers—including Bach, Beethoven, Chopin, and Mozart—we develop Long Short-Term Memory (LSTM)  and Convolutional Neural Network (CNN) models to identify the Composer of a given piece. Initially, we concentrate on the four mentioned composers to fine-tune our approach. In the end, we created a model encompassing all 145 composers in the dataset, assessing its generalization capabilities across diverse musical styles. We also performed optimizations and many other techniques to get the best models within the last few weeks. 
 # 
 # 
 # If you would like more information about the files or need access to the full project, please go to our GitHub repository: https://github.com/zainnobody/AAI-511-Final-Project. Feel free to fork or clone it. The README file also contains more information. 
+# 
+# Note: Artist and Composer are two words used to describe the creators of classical music, which is now in MIDI format. In this notebook, we use Artist, and the paper and other content use Composer.  
 
 # %% [markdown]
 # ### Libraries Import
@@ -243,6 +246,7 @@ def get_all_artists(raw_data_extracted):
         for name in os.listdir(raw_data_extracted)
         if os.path.isdir(os.path.join(raw_data_extracted, name))
     }
+    all_artists.remove("augmented_pitch")
     return all_artists
 
 
@@ -413,6 +417,8 @@ def get_midi_lengths_for_artists(
     return midi_file_lengths_df
 
 
+
+# %%
 paths_artist_length_data = get_midi_lengths_for_artists(
     raw_data_extracted, specific_artists
 )
@@ -879,6 +885,7 @@ def plot_training_history(history, figsize=(12, 4)):
     plt.show()
 
 
+# %%
 plot_training_history(history)
 
 
@@ -1237,8 +1244,6 @@ def construct_file_path(base_url, relative_path):
 
 
 # Iterating over each file to create chunks
-
-
 def process_all_files(df, base_url, fs=10, chunk_size=150):
     all_chunks = []
 
@@ -1260,6 +1265,7 @@ def process_all_files(df, base_url, fs=10, chunk_size=150):
     return chunk_df
 
 
+# %%
 processed_chunk_df = process_all_files(
     paths_artist_length_data, raw_data_extracted, fs=8, chunk_size=150
 )
@@ -1307,10 +1313,8 @@ def preprocess_chunks(dataframe, chunk_size=150):
     return X
 
 
-X = preprocess_chunks(processed_chunk_df)
-
-
 # %%
+X = preprocess_chunks(processed_chunk_df)
 X.shape
 
 # %% [markdown]
@@ -1328,10 +1332,8 @@ def encode_labels(labels):
 
     return onehot_encoded, label_encoder
 
-
-y, label_encoder = encode_labels(processed_chunk_df["Artist"])
-
 # %%
+y, label_encoder = encode_labels(processed_chunk_df["Artist"])
 y.shape
 
 # %%
@@ -1342,6 +1344,14 @@ X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_st
 
 # %% [markdown]
 # ### Defining the CNN Model
+
+# %% [markdown]
+# Here is what the architecture looks like:
+# 
+# ![CNN Initial Model Architecture](models-diagrams/initial-cnn-model.png)
+
+# %% [markdown]
+# We start with the piano rolls of Binary and Velocity channels and it goes through several layers, ending up within one of the Artists in the end. 
 
 # %%
 model = Sequential(
@@ -1546,6 +1556,8 @@ processed_chunk_all_df = process_all_files(
 )
 processed_chunk_all_df.to_pickle("processed_chunk_all_artist.pkl")
 
+# %%
+processed_chunk_all_df = pd.read_pickle('processed_chunk_all_artist.pkl')
 
 # %%
 X_all = preprocess_chunks(processed_chunk_all_df)
@@ -1559,7 +1571,6 @@ X_train_all, X_val_all, y_train_all, y_val_all = train_test_split(
     X_all, y_all, test_size=0.2, random_state=42
 )
 
-
 # %%
 X_all.shape
 
@@ -1569,8 +1580,13 @@ y_all.shape
 # %% [markdown]
 # ### Defining Model
 
+# %% [markdown]
+# Here is what the architecture looks like:
+# 
+# ![All Artists Inclusive Architecture](models-diagrams/full-cnn-model.png)
+
 # %%
-def create_best_model(optimizer="adam", init="glorot_uniform", dropout_rate=0.4):
+def create_best_model(input_shape, output_shape, optimizer="adam", init="glorot_uniform", dropout_rate=0.4):
     model = Sequential(
         [
             Conv2D(
@@ -1578,7 +1594,7 @@ def create_best_model(optimizer="adam", init="glorot_uniform", dropout_rate=0.4)
                 (3, 3),
                 activation="relu",
                 kernel_initializer=init,
-                input_shape=X.shape[1:],
+                input_shape=input_shape,
             ),
             MaxPooling2D((2, 2)),
             Dropout(dropout_rate),
@@ -1589,7 +1605,7 @@ def create_best_model(optimizer="adam", init="glorot_uniform", dropout_rate=0.4)
             Dense(128, activation="relu", kernel_initializer=init),
             Dropout(dropout_rate),
             Dense(
-                len(np.unique(processed_chunk_df["Artist"])),
+                output_shape,
                 activation="softmax",
                 kernel_initializer=init,
             ),
@@ -1601,18 +1617,32 @@ def create_best_model(optimizer="adam", init="glorot_uniform", dropout_rate=0.4)
     )
     return model
 
+# %%
+import warnings
+warnings.filterwarnings('ignore')
+
 
 # %%
-model = KerasClassifier(build_fn=create_best_model, epochs=10, batch_size=30, verbose=0)
+model = create_best_model(X_all.shape[1:], len(processed_chunk_all_df['Artist'].unique()))
+
+# %%
+model.summary()
 
 # %% [markdown]
 # ### Training Model
 
 # %%
-history = model.fit(X_train_all, y_train_all, validation_data=(X_val_all, y_val_all))
+history = model.fit(
+    X_train_all, 
+    y_train_all, 
+    validation_data=(X_val_all, y_val_all),
+    epochs=10, 
+    batch_size=30, 
+    verbose=1
+)
 
 # %%
-model.model.save("best_model_all_artists.h5")
+model.save("best_model_all_artists_test.h5")
 
 # %% [markdown]
 # ### Evaluating the Model
@@ -1627,18 +1657,121 @@ print(f"Validation Loss: {history.history['val_loss'][-1]}")
 print(f"Validation Accuracy: {history.history['val_accuracy'][-1]}")
 
 # %% [markdown]
-# These are quite lower than the first four artists, especially with the best-case model. We have 147 unique artists for this analysis, which is quite high compared to only four. 
-# 
-# Here's the table comparing the model performance for the evaluation with four artists and all 147 artists:
+# These are quite lower than the first four artists, especially with the best-case model. 
 # 
 # 
-# | Metric                 | Four Artists       | All Artists         | Difference (All - Four) |
-# |------------------------|--------------------|---------------------|-------------------------|
-# | **Training Loss** | 0.0836             | 0.3015              | +0.2179                 |
-# | **Training Accuracy** | 97.97%             | 87.88%              | -10.09%                 |
-# | **Validation Loss** | 0.08               | 0.6082              | +0.5282                 |
-# | **Validation Accuracy** | 98%                | 79.06%              | -18.94%                 |
+# | Metric                 | Four Artists       | All Artists (Threshold 0) | Difference (All - Four) |
+# |------------------------|--------------------|---------------------------|-------------------------|
+# | **Training Loss**       | 0.0836             | 2.0304                    | +1.9468                 |
+# | **Training Accuracy**   | 97.97%             | 42.76%                    | -55.21%                 |
+# | **Validation Loss**     | 0.08               | 1.9777                    | +1.8977                 |
+# | **Validation Accuracy** | 98%                | 42.89%                    | -55.11%                 |
 # 
+# 
+# This is a huge change, there might be an issue with presence of low chunks quantity.
+# 
+
+# %% [markdown]
+# #### Checking Chunk Issue
+# 
+# There might be an issue with artists with less chunks causing a huge increase 
+
+# %%
+def filter_using_threshold(processed_chunk_all_df, threshold):
+    # Group by 'Artist' and count the number of rows
+    artist_counts = (
+        processed_chunk_all_df.groupby("Artist").size().reset_index(name="Count")
+    )
+    total_rows = len(processed_chunk_all_df)
+    artist_counts["Percentage"] = (artist_counts["Count"] / total_rows) * 100
+    print("Artist Counts and Percentages:")
+    print(artist_counts)
+
+    filtered_artists = artist_counts[artist_counts["Percentage"] > threshold]
+
+    # Print counts of artists below and above the threshold
+    below_threshold_count = len(artist_counts[artist_counts["Percentage"] <= threshold])
+    above_threshold_count = len(filtered_artists)
+    print(
+        f"\nNumber of artists below the {threshold}% threshold: {below_threshold_count}"
+    )
+    print(
+        f"Number of artists above the {threshold}% threshold: {above_threshold_count}"
+    )
+
+    # Filter the original DataFrame
+    filtered_df = processed_chunk_all_df[
+        processed_chunk_all_df["Artist"].isin(filtered_artists["Artist"])
+    ]
+
+    # Print size of the filtered DataFrame
+    print(f"\nFiltered DataFrame size: {len(filtered_df)} rows")
+
+    # Save the filtered DataFrame as a pickle file
+    filtered_df.to_pickle("filtered_artists_df.pkl")
+
+    return filtered_df
+
+
+filtered_df = filter_using_threshold(processed_chunk_all_df, 0.1)
+
+
+# %%
+def build_and_analyse_model(filtered_df, info = ""):
+    
+    X_all = preprocess_chunks(filtered_df)
+    y_all, label_encoder_all = encode_labels(filtered_df['Artist'])
+    X_all, y_all = shuffle(X_all, y_all, random_state=42)
+    X_train_all, X_val_all, y_train_all, y_val_all = train_test_split(
+        X_all, y_all, test_size=0.2, random_state=42
+    )
+    model = create_best_model(X_all.shape[1:], len(filtered_df['Artist'].unique()))
+    model.summary()
+    history = model.fit(
+        X_train_all, 
+        y_train_all, 
+        validation_data=(X_val_all, y_val_all),
+        epochs=10, 
+        batch_size=30, 
+        verbose=1
+    )
+    model.save(f"best_model_all_artists_{info}.h5")
+    plot_training_history(history)
+    print(f"Training Loss: {history.history['loss'][-1]}")
+    print(f"Training Accuracy: {history.history['accuracy'][-1]}")
+    print(f"Validation Loss: {history.history['val_loss'][-1]}")
+    print(f"Validation Accuracy: {history.history['val_accuracy'][-1]}")
+
+    return model
+
+model_01 = build_and_analyse_model(filtered_df, info = "0_1")
+
+# %%
+filtered_df_1 = filter_using_threshold(processed_chunk_all_df, 1)
+model_1 = build_and_analyse_model(filtered_df, info = "1")
+
+# %%
+filtered_df_10 = filter_using_threshold(processed_chunk_all_df, 10)
+model_10 = build_and_analyse_model(filtered_df, info = "10")
+
+# %% [markdown]
+# Here is the table summarizing of accuracy at different thresholds:
+# 
+# | **Threshold** | **Training Loss** | **Training Accuracy** | **Validation Loss** | **Validation Accuracy** | **Artists Below Threshold** | **Artists Above Threshold** |
+# |---------------|-------------------|-----------------------|---------------------|-------------------------|-----------------------------|-----------------------------|
+# | 0             | 2.0304            | 0.4276                | 1.9777              | 0.4289                  | 0                           | 145                         |
+# | 0.1           | 1.4911            | 0.5215                | 1.6057              | 0.4953                  | 96                          | 49                          |
+# | 1             | 1.4226            | 0.5380                | 1.5957              | 0.5003                  | 131                         | 14                          |
+# | 10            | 1.3877            | 0.5469                | 1.6276              | 0.4996                  | 143                         | 2                           |
+# 
+
+# %% [markdown]
+# Two major thing to note:
+# 
+# - Both training and validation accuracy increase with higher thresholds, while training loss decreases. Validation loss, however, shows mixed results.
+# - The number of artists below the threshold increases as the threshold rises, while those above it decrease sharply.
+# 
+# It would be great to explore this further.
 
 # %% [markdown]
 # Overall, this project was quite fun for all of us. Not only did we learn quite a lot, but we also achieved great accuracy and optimization. We also got to try on full data, which was initially the main wish, as our data preparation was designed to include all the MIDI files and structure all the files quite nicely. 

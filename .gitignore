@@ -170,3 +170,5 @@ raw_data_unzipped/
 internal-work.md
 Backup.ipynb
 best_model_all_artists/
+midi_classic_music_data/
+PlotNeuralNet/
