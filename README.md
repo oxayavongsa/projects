@@ -1,4 +1,3 @@
-# end-to-end statistical analysis<br><br>
 ## Analyzing Heart Disease Mortality Rates Among US Adults 35yrs+:<br><br>
 **Exploring Gender Disparities, Geographic Correlations, Racial Influences, 
 and Environmental Factors.**<br>
