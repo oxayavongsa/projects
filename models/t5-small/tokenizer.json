@@ -1,0 +1,8 @@
+from transformers import T5Tokenizer
+
+# Load the pre-trained tokenizer from Hugging Face
+model_name = 't5-small'
+tokenizer = T5Tokenizer.from_pretrained(model_name)
+
+# Save the tokenizer (tokenizer.json) to the local folder
+tokenizer.save_pretrained('models/t5-small')

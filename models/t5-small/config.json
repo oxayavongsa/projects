@@ -1,0 +1,8 @@
+from transformers import T5ForConditionalGeneration
+
+# Load the pre-trained model from Hugging Face
+model_name = 't5-small'
+model = T5ForConditionalGeneration.from_pretrained(model_name)
+
+# Save the model configuration (config.json) to the local folder
+model.config.save_pretrained('models/t5-small')

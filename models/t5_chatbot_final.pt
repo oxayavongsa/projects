@@ -1,0 +1,13 @@
+# Save model checkpoint at epoch 15 (final epoch)
+def save_model_checkpoint(epoch, model, optimizer, file_path):
+    checkpoint = {
+        'epoch': epoch,
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+        'loss': total_loss  # You can track the loss if desired
+    }
+    torch.save(checkpoint, file_path)
+    print(f"Checkpoint saved at epoch {epoch}")
+
+# After epoch 15 (final epoch)
+save_model_checkpoint(15, model, optimizer, 'models/t5_chatbot_final.pt')
