@@ -1,83 +1,121 @@
-# Project Portfolio
-### Overview
-This repository contains a curated selection of projects that I have completed during my graduate studies. I will continue on-going work for the next couple of years to expand my portfolio. Each project listed below showcases specific skills and theoretical applications in various domains of data science and artificial intelligence. These projects demonstrate my ability to apply complex concepts to solve real-world problems and to develop predictive models that are both robust and scalable.
+# Context-Aware Movie Chatbot: Multi-Turn Conversations with Sentiment-Driven Responses
 
-**Please click on the Links to view the YouTube Video and/or Project.**
+[![Project Status: Active](https://img.shields.io/badge/Project%20Status-Active-green.svg)](https://github.com/oxayavongsa/NLP-Chatbot)
+[![GitHub issues](https://img.shields.io/github/issues/oxayavongsa/NLP-Chatbot.svg)](https://github.com/oxayavongsa/NLP-Chatbot/issues)
+[![GitHub stars](https://img.shields.io/github/stars/oxayavongsa/NLP-Chatbot.svg)](https://github.com/oxayavongsa/NLP-Chatbot/stargazers)
+[![GitHub license](https://img.shields.io/github/license/oxayavongsa/NLP-Chatbot.svg)](https://github.com/oxayavongsa/NLP-Chatbot/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.10-blue.svg)](https://python.org)
 
-## Projects
-### 1. <a href="https://youtu.be/60hwrqdN15Y">**Heart Disease Mortality Rate Analysis**</a><br>
-<a href="https://github.com/oxayavongsa/projects/tree/Heart-Disease-Mortality-Rate---Probability-%26-Statistics">**GitHub project**</a><be>
+## Project Overview
+This project is part of the AAI-520: Natural Language Processing course in the **Applied Artificial Intelligence Program** at the University of San Diego under the guidance of **Professor Kahila Mokhtari, Ph.D.** Our goal is to design and implement a **generative-based chatbot** that not only engages in multi-turn conversations but also incorporates **sentiment analysis** to adapt its responses based on the emotional tone of user input.
 
-Course: Probability and Statistics
-AAI-500 is an introductory course focused on probability, statistics, and Python programming, aimed at providing students with the foundational skills necessary for advanced AI studies. It covers a range of topics including random variables, probability distributions, hypothesis testing, and logistic regression, alongside practical Python applications. The course integrates case studies and real-world problem-solving, culminating in a team project that enhances students' skills in collaboration, presentation, and academic writing.
+The chatbot is trained using the **Cornell Movie Dialogs Corpus**, enabling it to handle diverse conversations with coherence, context-awareness, and emotional sensitivity.
 
-Course: Probability and Statistics
+[Visit the Cornell Movie-Dialogs Corpus](https://www.kaggle.com/datasets/rajathmc/cornell-moviedialog-corpus)
 
-Tools Used: Python, Jupyter, Statistical Analysis Methods
+# Repository Structure (edit when project complete)
 
-#### Overview:
-This project involved statistical analysis and probability theory to understand the factors influencing heart disease mortality rates. Through rigorous data cleaning, exploratory data analysis, and the application of statistical tests, I developed a comprehensive understanding of the significant predictors of heart disease. This project emphasized the practical application of biostatistics in public health.
 
-### 2. <a href="https://youtu.be/emlKCF9z5Bo">**Predictive Classification Modeling of Real Estate Pricing Tiers**</a><br>
-<a href="https://github.com/oxayavongsa/projects/tree/Real-Estate-Pricing-Tier---Intro-to-AI">**GitHub project**</a><br>
-Course: Introduction to Artificial Intelligence
-AAI-501 provides a comprehensive introduction to the field of Artificial Intelligence (AI), focusing on modern advancements in machine learning, deep learning, big data, and computational power. It covers essential AI concepts, techniques, and challenges across multiple domains such as Natural Language Processing (NLP), Computer Vision (CV), and more. Students will learn and apply a variety of AI methodologies, including heuristic search, genetic algorithms, Bayesian networks, and neural network models. Practical applications will be explored in areas like image processing, biomedical systems, and robotics, using Python. The course also emphasizes ethical considerations in AI development, such as fairness, trust, bias, and safety, aiming to foster skills in project management, teamwork, and leadership.
+| File/Folder Name         | Description                                                                 |
+| ------------------------ | --------------------------------------------------------------------------- |
+| `Final Project Report-Team 6.ipynb` | The Jupyter Notebook containing all the code for building and evaluating the chatbot. |
+| `Final Project Deliveries/` | Final Project Code, PowerPoint Presentation, and Brief Report |
+| `requirements.txt`        | Dependencies required for the project (e.g., TensorFlow, PyTorch, Hugging Face). |
+| `README.md`              | The project overview and structure (this file).                             |
+| `data/`                  | Raw dataset files, including the Cornell Movie-Dialog Corpus.               |
+| `models/`                | Trained model checkpoints.                                                  |
+| `.gitignore`             | Lists files/directories ignored by Git.                                     |
+| `LICENSE`                | Licensing information for the project.                                      |
 
-Course: Intro to AI
+---
+## Final Project Report
 
-Tools Used: Python, Scikit-learn, Jupyter, Tensorflow, and Machine Learning Algorithms
+The final deliverables for this project include a comprehensive report in **PDF format** that contains:
 
-#### Overview:
-In this project, I implemented several machine learning models to classify real estate properties into different pricing tiers based on a variety of features such as location, size, and condition. The project involved data preprocessing, feature engineering, model selection, and extensive evaluation of classifiers including, Random Forests, K-Nearest Neighbors, Gradient Boosting Machines and more. The final model was deployed to provide real-time predictions that can assist investors and buyers in making informed decisions.
+- The full project report
+- The Jupyter Notebook code
+- Powerpoint presentation
+- References and additional materials
 
-### 3. <a href="https://github.com/oxayavongsa/projects/tree/U.S-Life-Expectancy-Prediction---Male-vs-Female">Prediction of Life Expectancy Based on Gender</a>
+### Final Deliverables:
+`Final Project Deliveries/`
+- **Final_Project_Notebook_Team_6.pdf**: The full notebook converted to PDF, containing all code, analysis, and chatbot implementation.
+- **Final_Project_Report_Team_6.pdf**: The final project report, including methodology, results, and references.
+- **Final_PowerPoint_Presentation_Team_6.pptx**: The PowerPoint presentation summarizing key points and project progress.
 
-Tools Used: Python, Jupyter, Scikit-learn, Random Forest, GridSearchCV
+Please refer to these files for all the details regarding the project, methodology, and evaluation.
 
-#### Overview:
-This project aimed to predict life expectancy across different US states for males and females using advanced machine learning techniques. It involved an in-depth analysis of life expectancy data from 2010-2015 and 2020, examining the impact of gender and geographic location on life expectancy rates. I performed exploratory data analysis, data preprocessing, and predictive modeling using Linear Regression and Random Forest Regressor, with hyperparameter tuning using GridSearchCV.
+## Project Status: ✅ Completed
 
-### 4. <a href="https://github.com/oxayavongsa/projects/tree/Predicting-Stroke-Risk-for-Early-Detection">Predicting Stroke Risk: A Machine Learning Approach to Early Detection and Prevention</a>
+## Team Members:
+- **Outhai Xayavongsa** - Team Leader [![GitHub](https://img.shields.io/badge/GitHub-oxayavongsa-lightgrey)](https://github.com/oxayavongsa)
+- **Saad Saeed** - Lead Assistant [![GitHub](https://img.shields.io/badge/GitHub-SaadaSaeed86-lightgrey)](https://github.com/SaadaSaeed86)
+- **Anand Fernandes** - Team Member [![GitHub](https://img.shields.io/badge/GitHub-af0808-lightgrey)](https://github.com/af0808)
 
-Tools Used: Python, Jupyter, Scikit-learn, Imbalanced-learn, Decision Tree, Random Forest
+## Installation
 
-#### Overview:
-The objective of this project was to predict stroke occurrences using the "healthcare-dataset-stroke-data.csv" dataset. We developed predictive models using Decision Tree and Random Forest classifiers to identify individuals at high risk of stroke based on various health and demographic features. The project involved handling data imbalance using SMOTE and evaluating the models' performance using metrics such as accuracy, precision, recall, F1-score, and ROC AUC.
+To install and run the project on your machine, follow these steps:
 
-### 5. <a href="https://www.youtube.com/watch?v=TztlKFz5VXU">**Detection and Prevention of Vehicle Insurance Fraud Claim**</a><br>
-<a href="https://github.com/oxayavongsa/projects/tree/Vehicle-Insurance-Fraud-Detection---Machine-Learning">**GitHub Project**</a><br>
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/oxayavongsa/NLP-Chatbot.git
+   cd NLP-Chatbot
 
-Course: Machine Learning
+2. **Create and activate a virtual environment**:
+   ```bash
+   python3 -m venv chatbot-env
+   source chatbot-env/bin/activate
 
-Tools Used: Python, Jupyter, Scikit-learn, XGBoost, CatBoost
+3. **Install the required packages**:
+   ```bash
+   pip install -r requirements.txt
 
-#### Overview:
-This project aimed to tackle the issue of vehicle insurance fraud, which causes significant financial losses for insurance companies and erodes consumer trust. By leveraging historical vehicle and policy data, our objective was to develop a robust predictive model to accurately detect and prevent fraudulent claims. The implementation of this model helps insurance companies minimize financial losses, enhance the efficiency of claims processing, and maintain fair premium pricing for customers.
+4. **Download the Cornell Movie-Dialog Corpus**:
+   ```bash
+   kaggle datasets download -d rajathmc/cornell-moviedialog-corpus
+   unzip cornell-moviedialog-corpus.zip
 
-## Skills Demonstrated
-* Statistical Analysis
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* Data Cleaning and Preparation
-* Programming (Python)
-* Feature Engineering
-* Hyperparameter Tuning
-* Model Evaluation
-* Exploratory Data Analysis (EDA)
-* Handling Missing Data
-* Data Encoding
-* Model Deployment
-* Fraud Detection
-* Handling Class Imbalance
-* Model Comparison
-* Bayesian Optimization
-* Data Balancing (SMOTE)
-* Anomaly Detection (Isolation Forest)
-* Ensemble Learning (Gradient Boosting, Random Forest)
-* Hyperparameter Tuning (GridSearchCV, RandomizedSearchCV, Bayesian Optimization)
+5. **Run the Chatbot**:
+   ```bash
+   python NLP_Chatbot.py
 
-### Contact Information
-Feel free to reach out if you have any questions or if you are interested in collaborating on future projects.<br>
-Outhai Xayavongsa (Ms. Thai)
-### [LinkedIn](https://www.linkedin.com/in/oxayavongsa/)
+## Run the Chatbot
+* Option 1: Open Chatbot.ipynb in Jupyter Notebook or Google Colab to run the chatbot interactively.
+* Option 2: Use the command line interface to interact with the chatbot (see step 5 above).
+
+## Dataset Information
+* We used the Cornell Movie-Dialogs Corpus which contains:
+
+* 220,579 conversational exchanges between 10,292 pairs of movie characters.
+* 9,035 characters from 617 movies.
+* In total, 304,713 utterances with metadata such as genres, release year, IMDB rating, and character gender.
+
+## Methods Used
+* Python for development.
+* PyTorch for model training.
+* Hugging Face Transformers for leveraging pre-trained models (T5).
+* Jupyter Notebook or Google Colab for experimentation and testing.
+
+## Technologies
+* Preprocessing: Data was cleaned by removing punctuation, stopwords, lemmatization, and rare words.
+* Model Architecture: T5 (Text-To-Text Transfer Transformer) is used for multi-turn conversations and context-aware responses.
+* Sentiment Analysis: Incorporated into the chatbot to adjust responses based on the user's emotional tone.
+
+## How the Chatbot Works
+The chatbot uses a **Transformer-based model (T5)** to maintain multi-turn conversations. The **sentiment analysis** layer allows the chatbot to detect and adapt to emotional cues in the user's input, generating appropriate responses. It has been trained using the **Cornell Movie-Dialogs Corpus**, giving it the ability to handle movie-like dialogues with contextual coherence.
+
+### Example Usage
+(Replace the above link with an actual gif demo or video)
+
+## Future Improvements
+* Enhanced context retention over longer conversations.
+* Fine-tuning the model for specific conversational styles or tones.
+* Improving the user interface for better interaction.
+
+## License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+## Acknowledgements
+* Thanks to Cristian Danescu-Niculescu-Mizil and Lillian Lee for providing the Cornell Movie-Dialogs Corpus.
+* Special thanks to Professor Kahila Mokhtari, Ph.D., for guidance throughout the course.
+* Collaboration tools: GitHub, Slack, and Jupyter Notebook/Google Colab.
